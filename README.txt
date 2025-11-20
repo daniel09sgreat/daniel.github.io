@@ -11,3 +11,9 @@ Deployment (simple):
 3. Commit to `main` (or `master`).
 4. In repository Settings → Pages, select branch `main` and folder `/ (root)`.
 5. Save and wait a minute; your site will be live at `https://<username>.github.io/` or the URL provided by GitHub Pages.
+
+
+
+# My Website
+This project is based on or inspired by the work of [Widson Ambaisi](https://github.com/Widson-star). Original repository: [https://github.com/Widson-star/widsonambaisi.github.io](https://github.com/Widson-star/widsonambaisi.github.io)
+
