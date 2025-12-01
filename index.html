@@ -41,45 +41,52 @@
 
   <!-- Main content -->
   <main class="container main-grid">
-    <!-- Hero section stays unchanged -->
-    <section class="hero">
+    <!-- Hero section -->
+    <section id="hero" class="card hero">
       <div class="hero-left">
-        <!-- Hero content (unchanged) -->
+        <!-- Keep Daniel's hero content unchanged -->
       </div>
       <div class="hero-right">
-        <!-- Hero content (unchanged) -->
-      </div>
-    </section>
-
-    <!-- Profile & Quick stats -->
-    <aside>
-      <div class="profile-card">
-        <div class="profile-header">
-          <div class="avatar">D</div>
-          <div>
-            <h2>Daniel</h2>
-            <div class="muted">Program Manager — Tech Enthusiast</div>
+        <!-- Quick stats / profile card -->
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="avatar">D</div>
+            <div>
+              <h3>Focus Areas</h3>
+              <p class="muted">Tech Projects · Management · Systems Thinking</p>
+            </div>
+          </div>
+          <div class="quick-stats">
+            <div>
+              <div class="stat">5+ Years</div>
+              <p class="muted small">Experience</p>
+            </div>
+            <div>
+              <div class="stat">50+ Projects</div>
+              <p class="muted small">Delivered</p>
+            </div>
           </div>
         </div>
-        <div class="quick-stats">
-          <div class="stat">5+ Years Experience</div>
-          <div class="stat">50+ Projects</div>
-        </div>
       </div>
-
-      <!-- Skills section stays unchanged -->
-      <div id="skills" class="skill-grid">
-        <!-- Skill cards here -->
-      </div>
-    </aside>
-
-    <!-- Projects section stays unchanged -->
-    <section id="projects" class="projects-grid">
-      <!-- Project cards here -->
     </section>
 
-    <!-- References section - updated to match Widson responsiveness -->
-    <section id="refs" class="refs-grid">
+    <!-- About section -->
+    <section id="about" class="card">
+      <!-- Keep content unchanged -->
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="card skill-grid">
+      <!-- Keep content unchanged -->
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="card projects-grid">
+      <!-- Keep content unchanged -->
+    </section>
+
+    <!-- References section -->
+    <section id="refs" class="card refs-grid">
       <div class="ref">
         <h4>Amos Garkuwa Pama</h4>
         <p>Program Manager — Community AIDS/HIV and TB Foundation</p>
@@ -90,27 +97,27 @@
         <p>Commander Lagos Logistics Depot — Victoria Island, Lagos</p>
         <p>P: +234 703 678 7020 • email@example.com</p>
       </div>
-      <!-- Add more references as needed -->
     </section>
 
-    <!-- Contact section stays unchanged -->
-    <section id="contact" class="contact-form">
-      <!-- Form inputs & CTAs here -->
+    <!-- Contact section -->
+    <section id="contact" class="card highlight contact-form">
+      <!-- Keep content unchanged -->
     </section>
   </main>
 
-  <!-- Footer stays unchanged -->
+  <!-- Footer -->
   <footer class="site-footer">
-    &copy; 2025 Daniel. All rights reserved.
+    &copy; <span id="year"></span> Daniel. All rights reserved.
   </footer>
 
+  <!-- Hamburger menu toggle -->
   <script>
-    // Hamburger toggle
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav');
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
+    hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Auto-update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
